@@ -6,10 +6,15 @@ body{
 header{
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  min-height: 70px;
   background-color:rgb(100, 184, 187);
   align-items: center;
   padding: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 
 .logo{
@@ -20,4 +25,23 @@ header{
 .logo img{
   height: 50px;
   margin-right: 10px;
+}
+
+nav a{
+  font-weight: 600;
+  padding-right: 15px;
+}
+
+nav a:hover{
+  color: white
+}
+
+@media (max-width: 768px){
+  header{
+    flex-direction: column;
+  }
+
+  nav{
+    padding: 10px 0px;
+  }
 }
